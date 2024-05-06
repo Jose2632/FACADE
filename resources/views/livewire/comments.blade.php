@@ -7,13 +7,13 @@
 				{{session('mensaje', $default = null)}}
 			</div>
 			@endif
-			<form wire:submit.prevent="store">
+			<form wire:submit="store">
 				<label for="titulo" class="mb-2 block uppercase text-gray-500 font-bold">
 					Añade un Comentario
 				</label>
 				<textarea
 				id="comentario" 
-                wire:model.defer="comentario"
+                wire:model="comentario"
 				placeholder="Agrega un Comentario" 
 				class="border p-3 w-full rounded-lg @error('comentario') border-red-500 @enderror"
 				>{{ old('comentario', $default = null) }}</textarea>
