@@ -74,7 +74,7 @@
 <footer class="text-center p-5 text-gray-600 font-bold uppercase mt-10">
  Facade - Todos los derechos reservados {{ now()->year }} 
 
- <p class="text-gray-100 text-center text-sm">José Martínez - Laravel 9</p>
+ <p class="text-gray-100 text-center text-sm">José Martínez - Laravel 10</p>
 </footer>
 
 @livewireScripts
